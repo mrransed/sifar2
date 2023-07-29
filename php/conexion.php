@@ -1,8 +1,8 @@
 <?php
 
     $host="localhost";
-    $usuario="admin";
-    $clave="Chinchina2022";
+    $usuario="root";
+    $clave="";
     $db="sifar";
 
     $con=mysqli_connect($host,$usuario,$clave,$db)or

@@ -19,7 +19,25 @@
     <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
     <!-- Custom Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #DDD;
+      }
+      
+      tr:hover {background-color: #D6EEEE;}
+      h2{
+        font-size: 130%;
+      }
+      
+      </style>
+    
 </head>
 
 <body>
@@ -318,13 +336,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <a href="ventasmes.html"> <div class="card gradient-4">
+                        <div class="card gradient-4">
                             <div class="card-body">
                                 <h3 class="card-title text-white">Ventas al mes</h3>
                                 <div class="d-inline-block">
                                     <h2 class="text-white">1500</h2>
                                     <p class="text-white mb-0">Jan - March 2019</p>
-                                </div></a>
+                                </div>
                                 <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
                             </div>
                         </div>
@@ -342,7 +360,7 @@
                                             <p>Total Earnings of the Month</p>
                                             <h3 class="m-0">$ 12,555</h3> -->
 
-                                            producto
+                                            <h2>Balance general</h2>
                                         </div>
                                         <div>
                                             <ul>
@@ -353,7 +371,53 @@
                                         </div>
                                     </div>
                                     <div class="chart-wrapper">
-                                        <canvas id="chart_widget_2"></canvas>
+                                        <form class="form-inline" method="POST" action="">
+                                            <label>Fecha Desde:</label>
+                                            <input type="date" class="form-control" placeholder="Start"  name="date1"/>
+                                            <label>Hasta</label>
+                                            <input type="date" class="form-control" placeholder="End"  name="date2"/>
+                                            <button class="btn btn-primary" name="search"><span class="glyphicon glyphicon-search"></span>
+                                            </button> <a href="" type="button" class="btn btn-success"><span class = "glyphicon glyphicon-refresh"><span></a>
+                                          </form>
+                                        <php
+                                        $conexion= mysqlcone
+
+                                        
+                                        ?>
+
+                                        <table>
+                                            <tr>
+                                              <th>CANTIDAD VENTAS</th>
+                                              <th>CANTIDAD PRODUCTOS</th>
+                                              <th>CANTIDAD CLIENTES</th>
+                                              <th>TOTAL</th>                                          
+                                            </tr>
+                                            <tr>
+                                              <td>1</td>
+                                              <td>1</td>
+                                              <td>1</td>
+                                              <td>$100</td>
+                                            </tr>
+                                          </table>
+                                          <h2>Balance detallado</h2>
+                                          <table>
+                                            <tr>
+                                              <th>ID VENTA</th>
+                                              <th>MEDICAMENTOS</th>
+                                              <th>CANTIDAD</th>
+                                              <th>FECHA</th>
+                                              <th>VALOR UNITARIO</th>
+                                              <th>TOTAL</th>                                          
+                                            </tr>
+                                            <tr>
+                                              <td>1</td>
+                                              <td>ASPIRINA</td>
+                                              <td>1</td>
+                                              <td>10/10/2022</td>
+                                              <td>$100</td>
+                                              <td>$100</td>
+                                            </tr>
+                                          </table>
                                     </div>
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between">

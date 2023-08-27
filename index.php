@@ -1,3 +1,22 @@
+<?php
+
+
+    session_start();
+
+    if($_SESSION['user']){
+
+        
+
+    }else{
+        header("LOCATION:login.php?mensaje=error");
+    }
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 

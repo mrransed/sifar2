@@ -1,0 +1,7 @@
+<?php
+
+    require("conexion.php");
+    
+
+
+?>

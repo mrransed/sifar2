@@ -1,3 +1,22 @@
+<?php
+
+
+    session_start();
+
+    if($_SESSION['user']){
+
+        
+
+    }else{
+        header("LOCATION:login.php?mensaje=error");
+    }
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -878,6 +897,8 @@
 
 
     <script src="./js/dashboard/dashboard-1.js"></script>
+
+    <script src="./js/index.js"></script>
 
 </body>
 

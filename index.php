@@ -221,7 +221,23 @@
                         <li class="icons dropdown">
                             <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
                                 <span class="activity active"></span>
-                                <img src="images/user/1.png" height="40" width="40" alt="">
+                                <?php
+
+                                        require("php/conexion.php");
+
+                                        $idUsuarioSesion=$_SESSION['id'];
+
+                                        $sql = mysqli_query($con,"SELECT * FROM usuarios WHERE
+                                         id = '$idUsuarioSesion'");
+                                         
+                                        $row = mysqli_fetch_array($sql);
+                                        $foto = $row['foto'];
+                                        // echo $foto;
+
+                                ?>
+
+
+                                <img src="<?php echo 'images/user/'.$foto; ?>" height="40" width="40" alt="">
                             </div>
                             <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
                                 <div class="dropdown-content-body">

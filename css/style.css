@@ -14700,3 +14700,23 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
       color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+form#form-search{
+
+  display: flex;
+  width: 400px;
+  height: 46px;
+
+}
+
+
+form#form-search input {
+
+     margin-right: 15px;
+  
+}
+
+
+  

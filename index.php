@@ -98,7 +98,16 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
                         </div>
+                       
+                        <form action="php/consultarMedicamnetos.php" method="post" id="form-search">
                         <input type="search" class="form-control" placeholder="Buscar medicamentos" aria-label="Search Dashboard">
+                        <button type="submit" class="btn btn-primary">buscar</button>
+                    </form>
+
+                    
+                       
+                       
+                       
                         <div class="drop-down animated flipInX d-md-none">
                             <form action="#">
                                 <input type="text" class="form-control" placeholder="Search">

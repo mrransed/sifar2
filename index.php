@@ -99,10 +99,11 @@
                             <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
                         </div>
                        
-                        <form action="php/consultarMedicamnetos.php" method="post" id="form-search">
-                        <input type="search" class="form-control" placeholder="Buscar medicamentos" aria-label="Search Dashboard">
+                        <form action="php/consultarMedicamentos.php" method="post" id="form-search">
+                        <input type="search" class="form-control" placeholder="Buscar medicamentos" aria-label="Search Dashboard" name="medicamentos">
                         <button type="submit" class="btn btn-primary">buscar</button>
                     </form>
+               
 
                     
                        
@@ -382,18 +383,22 @@
                                 <div class="card">
                                     <div class="card-body pb-0 d-flex justify-content-between">
                                         <div>
-                                            <!-- <h4 class="mb-1">Product Sales</h4>
-                                            <p>Total Earnings of the Month</p>
-                                            <h3 class="m-0">$ 12,555</h3> -->
+                                           
+                                            <table class="table">
+                                            <thead>
+                                                <th>nombre producto</th>
+                                                <th>stock</th>
+                                          
+                                            </thead>
+                                                
+                                                <tbody id="sugerencias">
 
-                                            producto
+                                                </tbody>
+
+                                            </table>
                                         </div>
                                         <div>
-                                            <ul>
-                                                <li class="d-inline-block mr-3"><a class="text-dark" href="#">Day</a></li>
-                                                <li class="d-inline-block mr-3"><a class="text-dark" href="#">Week</a></li>
-                                                <li class="d-inline-block"><a class="text-dark" href="#">Month</a></li>
-                                            </ul>
+                                           
                                         </div>
                                     </div>
                                     <div class="chart-wrapper">

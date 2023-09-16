@@ -14701,8 +14701,6 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 
 /*# sourceMappingURL=style.css.map */
 
-
-
 form#form-search{
 
   display: flex;
@@ -14710,7 +14708,6 @@ form#form-search{
   height: 46px;
 
 }
-
 
 form#form-search input {
 
